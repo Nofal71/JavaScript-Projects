@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    height: 7vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(250 250 252 / 80%);
+    top:0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.nav_item {
+    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: clamp(.1rem, 3vw, .75rem);
+}
+
+.nav_item:hover {
+    cursor: pointer;
+    color: black;
+}
+
+.nav_item i {
+    font-size: 1.25rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(29, 28, 28);
+}
+
+/* main{
+    height: 200vh;
+    width: 100%;
+    background-color: lightblue;
+    margin-top: 7vh;
+} */
