@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     padding: 0;
     margin: 0;
 }
@@ -12,7 +13,7 @@ header {
     justify-content: center;
     align-items: center;
     background-color: rgb(250 250 252 / 80%);
-    top:0;
+    top: 0;
     right: 0;
     left: 0;
     z-index: 1000;
@@ -22,12 +23,13 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 2vw;
 }
 
 .nav_item {
     font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: clamp(.1rem, 3vw, .75rem);
+    flex: 1 ;
 }
 
 .nav_item:hover {
@@ -44,9 +46,157 @@ nav a {
     color: rgb(29, 28, 28);
 }
 
-/* main{
-    height: 200vh;
+.page {
+    height: 95vh;
+    background-color: #f5f5f7;
+}
+
+.first {
     width: 100%;
-    background-color: lightblue;
     margin-top: 7vh;
-} */
+    display: flex;
+    flex-direction: column;
+}
+
+.row_1 {
+    height: 78vh;
+    background-image: url(Asserts/First_bg.PNG);
+}
+
+.row_2 {
+    margin-top: 2vh;
+    text-align: center;
+}
+
+.row_2 button {
+    border: 1px solid #06c;
+    color: #06c;
+    border-radius: 30px;
+    line-height: 1;
+    font-size: 17px;
+    padding: 11px 21px;
+}
+
+.row_2 button:hover {
+    cursor: pointer;
+    background-color: #06c;
+    color: white;
+}
+
+.second {
+    display: flex;
+    justify-content: center;
+    padding-top: 5vh;
+    background-image: url(Asserts/second_bg.PNG);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.second_head h1 {
+    font-size: 50px;
+}
+
+.second_head h2 {
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.b1,
+.b2 {
+    border: 1px solid #06c;
+    color: #06c;
+    border-radius: 30px;
+    font-size: 17px;
+    padding: 11px 21px;
+    margin-top: 30px;
+    margin-right: 1vw;
+    background: transparent;
+}
+
+.b1 {
+    background-color: #06c;
+    color: white;
+}
+
+.b1:hover {
+    background-color: rgb(48, 129, 211);
+    cursor: pointer;
+
+}
+
+.b2:hover {
+    background-color: #06c;
+    color: white;
+    cursor: pointer;
+}
+
+.third {
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-color: black;
+    color: white;
+    text-align: center;
+    background-image: url(Asserts/third_bg.PNG);
+}
+
+.third h1 {
+    font-size: 54px;
+    margin-top: 10vh;
+}
+
+.third h2 {
+    font-weight: 400;
+    font-size: 30px;
+}
+
+
+section{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    grid-template-rows: repeat(3 , 1fr) ;
+    margin: 10px;
+    gap: 1vw;
+}
+
+.flex{
+    height: 90vh;
+    width: auto;
+    text-align: center;
+    background-position: bottom;
+    color: black;
+    background-color: #f5f5f7;
+    background-repeat: no-repeat;
+}
+.b{
+    padding: 8px 15px;
+}
+.flex h1 {
+    margin-top: 5vh;
+    font-size: 40px;
+}
+.flex h2 {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.flex_1{
+    color: white;
+    background-color: black;
+    background-image: url(Asserts/flex_1.PNG);
+}
+.flex_2{
+    background-image: url(Asserts/flex_2.PNG);
+}
+.flex_3{
+    background-position: center;
+    padding-top: 55vh;
+    background-image: url(Asserts/flex_3.PNG);
+    background-size: 100%;
+}
+.flex_4{
+    background-image: url(Asserts/flex_4.PNG);
+    background-color: black;
+    color: white;
+}
