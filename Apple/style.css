@@ -184,19 +184,13 @@ section{
 .flex_1{
     color: white;
     background-color: black;
-    background-image: url(Asserts/flex_1.PNG);
-}
-.flex_2{
-    background-image: url(Asserts/flex_2.PNG);
 }
 .flex_3{
     background-position: center;
     padding-top: 55vh;
-    background-image: url(Asserts/flex_3.PNG);
     background-size: 100%;
 }
 .flex_4{
-    background-image: url(Asserts/flex_4.PNG);
     background-color: black;
     color: white;
 }
