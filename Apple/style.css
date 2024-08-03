@@ -29,7 +29,7 @@ nav {
 .nav_item {
     font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: clamp(.1rem, 3vw, .75rem);
-    flex: 1 ;
+    flex: 1;
 }
 
 .nav_item:hover {
@@ -45,6 +45,38 @@ nav a {
     text-decoration: none;
     color: rgb(29, 28, 28);
 }
+
+.store{
+    display: none;
+    position: absolute;
+    top: 7vh ;
+    right: 0;
+    left: 0;
+    justify-content: center;
+    height: 80vh;
+    width: 100vw;
+    background-color: white;
+    padding-right: 22vw;
+    font-size: 17px;
+}
+.store label{
+    color: grey;
+}
+.nav_list{
+    margin:30px;
+}
+.nav_list ul{
+    list-style: none;
+    line-height: 6vh;
+}
+.nav_li_first{
+    font-size: 25px;
+}
+
+
+
+
+
 
 .page {
     height: 95vh;
@@ -152,15 +184,15 @@ nav a {
 }
 
 
-section{
+section {
     display: grid;
-    grid-template-columns: repeat(2 , 1fr);
-    grid-template-rows: repeat(3 , 1fr) ;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     margin: 10px;
     gap: 1vw;
 }
 
-.flex{
+.flex {
     height: 90vh;
     width: auto;
     text-align: center;
@@ -169,28 +201,61 @@ section{
     background-color: #f5f5f7;
     background-repeat: no-repeat;
 }
-.b{
+
+.b {
     padding: 8px 15px;
 }
+
 .flex h1 {
     margin-top: 5vh;
     font-size: 40px;
 }
+
 .flex h2 {
     font-weight: 400;
     font-size: 20px;
 }
 
-.flex_1{
+.flex_1 {
     color: white;
     background-color: black;
 }
-.flex_3{
+
+.flex_3 {
     background-position: center;
     padding-top: 55vh;
     background-size: 100%;
 }
-.flex_4{
+
+.flex_4 {
     background-color: black;
     color: white;
 }
+/* .slide{
+    width: auto;
+    overflow: hidden;
+}
+
+.slide_section{
+    display: flex;
+    height: 88vh;
+    justify-content: flex-start;
+    align-items: center;
+    width: 700vw;
+    gap:2vw;
+    scroll-snap-align: top;
+    margin-left: 7vw;
+}
+.slide_item{
+    background-color: lightblue;
+    flex: 1;
+    min-width: 80vw;
+    height: 78vh;
+    border: 2px solid black ;
+}
+
+.autoSlide{
+  transform: translateX(-80vw);
+  transition-duration: 5s;
+}
+ */
