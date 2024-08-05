@@ -1,0 +1,91 @@
+body {
+    background-color: #0d1b2a;
+    color: #e0e1dd;
+}
+
+.outer_container {
+    position: fixed;
+    padding: 10vh 10vw;
+    padding-top: 3vh;
+    background-color: #415a77;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 27vw;
+}
+
+.input_area {
+    padding: 6vh 0;
+    display: flex;
+    gap: 2vw;
+}
+
+.input_area input {
+    padding: 10px;
+    border-radius: 30px;
+    border: 1px solid gray;
+    width: 20vw;
+    background: transparent;
+    color: #e0e1dd;
+}
+
+.input_area button {
+    background: transparent;
+    border: 1px solid gray;
+    border-radius: 30px;
+    color: #e0e1dd;
+}
+
+.input_area button:hover {
+    border: 1px solid navy;
+    cursor: pointer;
+}
+
+.input_area input:hover {
+    border: 1px solid navy;
+    cursor: pointer;
+}
+
+.task_display {
+    position: fixed;
+    padding: 10vh 10vw;
+    padding-top: 3vh;
+    width: 27vw;
+    background-color: #415a77;
+    top: 60%;  /* Adjusted from 50% to 60% to move it below outer_container */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.task_area {
+    background-color: #0d1b2a;
+    color: #e0e1dd;
+    display: flex;
+    gap: 2vw;
+    font-size: 1.2rem;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.task_area span {
+    margin-left: auto;
+    margin-right: 5px;
+    padding: .5rem;
+}
+
+.task_area span:hover {
+    margin-left: auto;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+#check:hover {
+    cursor: pointer;
+}
