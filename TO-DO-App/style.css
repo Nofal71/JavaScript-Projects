@@ -1,91 +1,108 @@
-body {
-    background-color: #0d1b2a;
-    color: #e0e1dd;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.outer_container {
-    position: fixed;
-    padding: 10vh 10vw;
-    padding-top: 3vh;
-    background-color: #415a77;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-width: 27vw;
-}
-
-.input_area {
-    padding: 6vh 0;
-    display: flex;
-    gap: 2vw;
-}
-
-.input_area input {
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
     padding: 10px;
-    border-radius: 30px;
-    border: 1px solid gray;
-    width: 20vw;
-    background: transparent;
-    color: #e0e1dd;
 }
 
-.input_area button {
-    background: transparent;
-    border: 1px solid gray;
-    border-radius: 30px;
-    color: #e0e1dd;
+.todoapp {
+    width: 100%;
+    max-width: 540px;
+    background-color: white;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
 }
 
-.input_area button:hover {
-    border: 1px solid navy;
-    cursor: pointer;
+.todoapp h2 {
+    margin-bottom: 20px;
 }
 
-.input_area input:hover {
-    border: 1px solid navy;
-    cursor: pointer;
-}
-
-.task_display {
-    position: fixed;
-    padding: 10vh 10vw;
-    padding-top: 3vh;
-    width: 27vw;
-    background-color: #415a77;
-    top: 60%;  /* Adjusted from 50% to 60% to move it below outer_container */
-    left: 50%;
-    transform: translate(-50%, -50%);
+.row {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.task_area {
-    background-color: #0d1b2a;
-    color: #e0e1dd;
-    display: flex;
-    gap: 2vw;
-    font-size: 1.2rem;
-    justify-content: flex-start;
     align-items: center;
-    border-radius: 20px;
+    justify-content: space-between;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    background-color: wheat;
+    border-radius: 10px;
 }
 
-.task_area span {
-    margin-left: auto;
-    margin-right: 5px;
-    padding: .5rem;
+.row input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
 }
 
-.task_area span:hover {
-    margin-left: auto;
-    margin-right: 5px;
+.row button {
+    padding: 16px 20px;
+    outline: none;
+    border: none;
+    background-color:darkorange;
+    border-radius: 40px;
+    font-size: 16px;
     cursor: pointer;
 }
 
-#check:hover {
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
     cursor: pointer;
+    position: relative;
+    color: black;
 }
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(unchecked.png);
+    background-position: center;
+    background-size: cover;
+    top: 7px;
+    left: 8px;
+}
+
+ul li.checked {
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url(checked.png);
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background-color: azure;
+}
+/* 
+.dark{
+    background-color: black;
+    color: white;
+}
+.light{
+    background-color: white;
+    color: black;
+} */
