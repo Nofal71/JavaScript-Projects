@@ -21,8 +21,7 @@ let getData = async () => {
     humidity.innerText = data.main.humidity + " %";
     temp.innerText = Math.floor(data.main.temp) + " °C";
     let url = data.weather[0].main;
-    // icon.src = `Images/${url}.PNG`
-    icon.src = `Images/${url}.PNG`
+    icon.src = `/JavaScript-Projects/Weather App/Images/${url}.PNG`
     city.innerText = data.name;
     input.value = '';
 };
